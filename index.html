@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation Assignment</title>
+</head>
+<body>
+    <h1>String Manipulation Assignment</h1>
+ 
+    <div>
+        <label for="capitalize"> Write Your Name in LowerCase</label>
+        <input type="text" name="WriteWord" id="capitalize" onchange="onChange(event)" />
+    </div>
+    <p id="capitalizeFL"></p>
+    <p id="capitalizeAll"></p>
+    <div>
+        <label for="isExit">check word existence from above string</label>
+        <input type="text" name="WriteWord" id="isExit" onchange="isExit(event)" />
+    </div>
+    <p id="isExitword"></p>
+    <div>
+        <label for="goc">Write Word for Occurrence Count</label>
+        <input type="text" name="WriteWord" id="goc" onchange="getOccurrenceCount(event)" />
+    </div>
+    <p id="getOC"></p>
+    <p id="WordDensity"></p>
+    <div>
+        <label for="file">Select the file for Extracts the file extension : </label>
+        <input type="file" name="WriteWord" id="file" onchange="getExt(event)" />
+    </div>
+    <p id="ExtFile"></p>
+    <div>
+        <label for="RWS">write String with whiteSpace : </label>
+        <input type="text" name="WriteWord" id="RWS" onchange="removeWhitespace(event)" />
+    </div>
+    <p id="whiteSpace"></p>
+    <p id="ReverseWord"></p>
+    <p id="countVowels"></p>
+    <p id="isPalindrome"></p>
+    <div>
+        <label for="string">Write something about yourself : </label>
+        <input type="text" name="WriteWord" id="string" onchange="truncateString(event)" />
+    </div>
+    <p id="truncateString"></p>
+    <div>
+        <label for="stringmasking">Enter your credit card numbers  : </label>
+        <input type="number" name="WriteWord" id="stringmasking" onchange="maskString(event)" />
+    </div>
+    <p id="maskString"></p>
+    <div>
+        <label for="validateEmailCheck">Enter your email address : </label>
+        <input type="text" name="WriteWord" id="validateEmailCheck" onchange="validateEmail(event)" />
+    </div>
+    <p id="EmailCheck"></p>
+    <script src="stringManipulation.js"></script>
+</body>
+</html>
