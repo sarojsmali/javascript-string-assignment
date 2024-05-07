@@ -3,6 +3,7 @@ function onChange(e){
     
     console.log(e.target.value);
     const words = e.target.value.split(" ");
+    /*
     let capitalizedString = "";
     for (let i = 0; i < words.length; i++) {
         const firstLetter = words[i][0];
@@ -10,7 +11,13 @@ function onChange(e){
         capitalizedString += upperFirstLetter + words[i].substring(1) + " ";
     }
     capitalizedString = capitalizedString.trim();
-    document.getElementById("capitalizeFL").innerHTML = "1. Capitalize First letter: " + capitalizedString;
+    */
+    let word = words.map((e)=>{
+        return e[0].toUpperCase() + e.slice(1).toLowerCase();
+    });
+    let out=word.join(" ");
+
+    document.getElementById("capitalizeFL").innerHTML = "1. Capitalize First letter: " + out;
     let capitalizedStringA = " ";
     for (let i = 0; i < e.target.value.length; i++) {
         const charCode = e.target.value.charCodeAt(i);
@@ -38,7 +45,6 @@ function getOccurrenceCount(e) {
     document.getElementById("WordDensity").innerHTML = "5. Word Density Calculation is : " + density ;
 
 }
-
 function getExt(e){
     const fileI = e.target.value;
     console.log(fileI);
